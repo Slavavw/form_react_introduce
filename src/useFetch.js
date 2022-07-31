@@ -36,7 +36,7 @@ export default function Fetch({url,
   const {data,loading,error} = useFetch(url);
   if (loading) return loadingFallback;
   if (error) {mounted=!mounted; throw new Error(error)};
-if (!data) return null;
-!mounted; 
-return renderSuccess( {...data});
+  if (!data) return null;
+  !mounted; 
+  return renderSuccess( {...data});
 }

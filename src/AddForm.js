@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import {FaAdjust,FaStar,FaMale,FaPhone } from "react-icons/fa";
+import {FaAdjust,FaStar,FaMale,FaPhone,FaCheck } from "react-icons/fa";
 import {userInputTagHook, useMountedRef } from "./userHook";
 import SuccessResult from "./SuccesResult";
 import Human from "./human";
@@ -27,7 +27,8 @@ export default function AddForm(){
   const submit = event=>{ event.preventDefault();    
     let url = new URL("https://api.github.com");
     url.searchParams.set("user",human);
-    setURL(url.href);
+    //setURL(url.href);
+    setURL("http://127.0.0.1:3000/");
   }
   return (
     <>
@@ -42,10 +43,10 @@ export default function AddForm(){
         <Phone value={phone} setValue={setPhone}/><br/><br/>
         <Bearthday value={bearthday} setValue = {setBearthday}/><br/><br/>
         <Comment value={comment} setValue = {setComment}/><br/><br/>
-        <button><FaStar color="red" />Add color</button>
+        <button><FaCheck color="red" /> Ok</button>
       </form>
       <div>
-        {<Fetch url={url} renderSuccess = {SuccessResult} mounted ={mounted.current}/>}
+        <Fetch url={url} renderSuccess = {SuccessResult} mounted ={mounted.current}/>
       </div>
     </>
   )

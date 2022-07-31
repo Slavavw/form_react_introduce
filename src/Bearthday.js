@@ -1,16 +1,11 @@
 import React from "react";
-import {} from "react-icons";
-
-
-
+import {BiBeer} from "react-icons/bi";
 const getCurrentDate = ()=>new Date(Date.now()).toLocaleDateString("ru").split(".").reverse().join("-");
-
-
 
 export default function Bearthday({value, setValue}){
   return (
     <>
-      <label for="start">bearthday:</label>
+      <label for="start"><BiBeer/>bearthday:</label>
       <input type="date" id="start" name="trip-start"
         value={value}
         min="2018-01-01" max={getCurrentDate()}
