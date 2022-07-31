@@ -1,0 +1,44 @@
+{
+  "name": "form_react_introduce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "set NODE_ENV=development&&webpack",
+    "start": "set NODE_ENV=development&&webpack  serve --open",
+    "build": "set NODE_ENV=production&&webpack",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "SlavaVW",
+  "license": "ISC",
+  "dependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.3.0",
+    "serve": "^14.0.1",
+    "webpack-dev-server": "^4.9.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "postcss-loader": "^7.0.1",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.3.0",
+    "react-spinners": "^0.13.3",
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.2",
+    "static-site-generator-webpack-plugin": "^3.4.2",
+    "style-loader": "^3.3.1",
+    "uuid": "^8.3.2",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  }
+}

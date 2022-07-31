@@ -1,0 +1,15 @@
+.add_form {
+  width: 50%;
+  border: 2px dotted rgba($color: #1affff, $alpha: .8);
+};
+
+.githubUser{
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 2 dotted solid grey;
+  background-color: beige;
+  footer {
+    color: rgba(15, 77, 217,.8);
+    font-size: 1.2em;
+  };
+};

@@ -1,0 +1,16 @@
+.add_form {
+  width: 50%;
+  border: 2px dotted rgba(26, 255, 255, 0.8);
+}
+
+.githubUser {
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 2 dotted solid grey;
+  background-color: beige;
+}
+
+.githubUser footer {
+  color: rgba(15, 77, 217, 0.8);
+  font-size: 1.2em;
+}
